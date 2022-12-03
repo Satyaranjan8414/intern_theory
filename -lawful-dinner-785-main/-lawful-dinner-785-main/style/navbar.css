@@ -1,0 +1,151 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  } */
+body{
+    position: relative;
+    min-height:100vh ;
+    width: 100%;
+    /* overflow: hidden ; */
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+.sidebar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 22%;
+    background-color: #ffffff;
+    padding: 6px 2px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: none;
+   
+}
+#logo{
+    height:25px;
+    width: 25%;
+    position: relative;
+    left: 10px;
+    /* border: 1px solid black; */
+}
+.nav_list{
+    margin-top: 10px;
+}
+.nav_list>li{
+    width: 100%;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    font-size: 15px;
+    padding: 5px;
+    
+}
+.fa-bars{
+    position: relative;
+    bottom: 10px;
+    padding: 7px;
+    border-radius: 20px;
+    /* top:1px; */
+    
+}
+.fa-bars:hover{
+    background-color: #dcdcd8;
+}
+
+.links_name{
+    position: relative;
+    left: 30px;
+    text-decoration: none;
+    color: #212121
+}
+
+.nav_list>li:hover{
+    background-color: #dcdcd8;
+}
+a{
+    text-decoration: none;
+}
+
+#ar1{
+    position: relative;
+    left:104px;
+    color: #446478;
+}
+#ar2{
+    position: relative;
+    left:100px;
+    color: #446478;
+}
+#ar3{
+    position: relative;
+    left:117px;
+    color: #446478;
+}
+.fa-solid{
+    color: #446478;
+}
+#navimg{
+    width: 30%;
+    margin-top: 4px;
+}
+#nav_bar{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    height: 60px;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+}
+#signin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding-right: 20px;
+    gap: 20px;
+
+}
+#s1{
+    color: white;
+    background-color: #df1e2e;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fa-cart-shopping{
+    margin-top: 5px;
+}
+#s1:hover{
+    background-color:#8a1720 ;
+}
+h4{
+    font-size: 12px;
+}
+
+  #opt1 {
+    display: none;
+    /* width: 100%; */
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: black;
+  }
+  

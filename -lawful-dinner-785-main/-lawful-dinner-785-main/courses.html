@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/b63073adcc.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/courses.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./style/emi.css" >
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="nav_bar">
+      <div id="nav_log">
+        <i class="fa-solid fa-bars nav_ham" id="slider"></i>
+        <img
+          id="navimg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8RE3l71VRCm23ci33-wBI5lLx7hwhghecXza9lao&s"
+          alt=""
+        />
+      </div>
+      <div id="signin">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="signup.html">
+          <h4 id="s1">SignIn</h4>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="fa-solid fa-bars close" id="close"></i>
+          <img
+            id="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8RE3l71VRCm23ci33-wBI5lLx7hwhghecXza9lao&s"
+            alt=""
+          />
+          <div class="logo_name"></div>
+        </div>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <span class="links_name"><b>Home</b></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list"></i>
+            <span class="links_name"><b>Internships</b></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="links_name"><b>Jobs</b></span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list-check"></i>
+            <span class="links_name"><b>Post Internship</b></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="course()">
+            <i class="fa-solid fa-mobile"></i>
+            <span class="links_name"><b>Courses</b></span>
+            <i id="ar1" class="fa-solid fa-angle-down"></i>
+          </a>
+        </li>
+        <ul class="course">
+          <a href="#" id="opt1">
+            <li><b>Online Courses</b></li>
+            <li><b>Classroom Traning</b></li>
+          </a>
+        </ul>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-phone"></i>
+            <span class="links_name"><b>Contact Us</b></span>
+          </a>
+        </li>
+        <li class="register" onclick="register()">
+          <a href="#">
+            <i class="fa-solid fa-align-left"></i>
+            <span class="links_name"><b>Register</b></span>
+            <i id="ar2" class="fa-solid fa-angle-down"></i>
+          </a>
+        </li>
+        <ul id="reg" class="how">
+          <li class="opt"><b>Company</b></li>
+          <li class="opt"><b>Student</b></li>
+        </ul>
+        <li onclick="login()">
+          <a href="#">
+            <i class="fa-solid fa-book"></i>
+            <span class="links_name"><b>Login</b></span>
+            <i id="ar3" class="fa-solid fa-angle-down"></i>
+          </a>
+        </li>
+        <ul id="log" class="how">
+          <li class="opt"><b>Company</b></li>
+          <li class="opt"><b>Student</b></li>
+        </ul>
+      </ul>
+    </div>
+    <div class="top-bottom">
+      <div id="top">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC1ATQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECAwb/xAAvEAEBAAECBAQEBgMBAQAAAAAAARECMSFBUZESYXGhgbHB0SIyQlJy4QNi8IKS/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBAX/xAAXEQEAAwAAAAAAAAAAAAAAAAAAARFB/9oADAMBAAIRAxEAPwDwBkJOGeEnW/RuOKLJbxxw67T3TMm0+N37bJbbvc+oNYk/V2zU/D/t7REQazp/27z7H4euqdqyA3icrL68Pmllm8wmVmqzb+uwCZa/DfK9Zsllnx26X0UTK5ZAaymUAaymUAXJlAFyZQBrJlkBcrlkBcmUAXJlFktskBVkt278PmfhnnenJLbfht07AvDne0+tTM5ae9tREG/FZtJPSQ8er/pGAGvF5ae1nyXOnznpx+bAo3jpq0/HM+gkAXE08dWc8p90uq3n8isgAqCCoAKgAADUvLeXlWVBbP1TjPeeVZals+V850pZtZtfa9AZFQAVAAAAABQEBQQF4gslt/7h51bZMyfG87/SW44S+ds51AQAAVABQEAUagQArK1AFQQVABUAAAAAFWWTOdrv92QFuZcI1vPOfLkyCoAAAAAKIAKgCtbTzu3ozJmydVtzfLl6AyAAACoAKIAAKNQIAiLUAAQAAAAAAAAAAa07zO14X4pZjvgXV164veAyAAAAAAAACgsnDV27pVv5dPnm/RkAAAAAAAAABRqBAEqLUAAQAAAAAAAAAAGtW2j0s7Vlq7af/XzBkAAAAAAAAFBdW2n+M+dZa1fp/jPqyAAAAAAAAAAo1AgCVFqAAIAAAAAAAAAADWrbT6fOphdW/pidoDIAAAAAAAAANXbT8Z7st4zpvlZe/BgAAAAAAAAABRqBACsrUAAQAAAAAAAAAUF09eU4ot4THO8b9IyAAAAAAAAAADUvHjteF9Klzn0GrxmenC/SgwAAAAAAAAAo1AgCVGrwzLOM3ZAAQAAAAAAAUEakm92nvehJ8JN70Lc45SbQEtub57oAAAAAAAAAAADWm45ZnOdYyA1ZjzztesZalm12955ln/dQZAAAAAAAUagQAzNrtyvOJZZ9MbFWXH97AyN3w3y9du6XTZxs4dd53QZFQAAAVZpu94TreH9giyc7wnvfKGdM5Z6W7dktyC3VeXCdGQAAAAAAAUkt29msaZvfhp4++wM4Gs6Ztpnxtvywni8tPafUEF8U/bp7WfI/Bes9/mDI14ecxZ5fbdkBqXlvOc+zIDWOnGe89UJcLmXefGcL9gRGsZ2svrwvueHVN5ewMi8AEFxnZfDq58P5cFCCzwT9XbT96AlRWQUls2tnogg14us034fYzp/b2t+rIDWdHS//AF/RnTy0z421kBvxXyn8ZJ77s5QBRAFEAUQBRAFWSYzeE5db6Ek3u0970NVt3/70At4YnCdJ9UQBRAFEAWXz4tZ06t+F644X1jADVl2xxm6NS+LEvL8tvLyZu9AEAUls2tnogDfi1dU8Wrr7RkBrxav3XuiCjUCAJUarIACAAAAAAAAAAAAAsmbj0FnCar5YnrQLZtNpwn1rK1AAAAAAAAAWNXjPFzmJfPpWG9PT908PcGBbEAAAAAAUagQBdU8OrVN8WzsgBoAoAAAAAAAAAAAALfy6fO6r2xAQQBQAAAAAAAAABdX5tXrnvxQEABQAAAQdf8f+Kf5NNucYuNvLICM6h//Z"
+          alt=""
+        />
+        <img
+          src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <section id="container">
+      <h2>Certified Online Courses</h2>
+      <p>
+        Upgrade your skills with Intern Theory's online learning platform. Enrol
+        for any certified online courses and get a step ahead of competition.
+        Select from a range of skill based online courses and kickstart your
+        career.
+      </p>
+      <div id="product">
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg"
+            alt=""
+          />
+          <div class="font">
+            <h4>IT Starter Pack (4 Courses)</h4>
+            <p>
+              Learn the most demanded skills in the IT industry today. Sig ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹32999 </span> <span> ₹15999</span></p>
+          <p class="emi">Emi Starting at ₹ 915/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"> <button>KNOW MORE</button></a>
+            <a href="#"><button class="add_course_cart">ADD TO CART</button></a>
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Digital Marketing Course</h4>
+            <p>
+              Learn the art of digital marketing. Sign up for this online ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹11999 </span><span>₹5999</span></p>
+          <p class="emi">Emi Starting at ₹ 343/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"><button>KNOW MORE</button></a>
+            <a href="#">
+              <button class="add_course_cart">ADD TO CART</button>
+            </a>
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Data Analytics With R Programming Course</h4>
+            <p>
+              Learn data science online. Join this online data analytics c ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹11999</span> <span>₹5999</span></p>
+          <p class="emi">Emi Starting at ₹343/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"><button>KNOW MORE</button></a>
+            <a href="#"><button class="add_course_cart">ADD TO CART</button></a>
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Web Development Course</h4>
+            <p>
+              Learn the art of web design and web development. Join this o ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹7999</span> <span>₹3999</span></p>
+          <p class="emi">Emi Starting at ₹229/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"> <button>KNOW MORE</button></a>
+            <a href="#"><button class="add_course_cart">ADD TO CART</button></a>
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Tally + GST Course</h4>
+            <p>
+              Sign up for this online tally and gst course and learn how t ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹7999</span> <span>₹3999</span></p>
+          <p class="emi">Emi Starting at ₹229/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"> <button>KNOW MORE</button></a>
+            <a href="#">
+              <button class="add_course_cart">ADD TO CART</button></a
+            >
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Android App Development Using Kotlin Course</h4>
+            <p>
+              Learn the art of android app design and web development. Joi ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹7999</span> <span>₹3999</span></p>
+          <p class="emi">Emi Starting at ₹229/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"><button>KNOW MORE</button></a>
+            <a href="#">
+              <button class="add_course_cart">ADD TO CART</button></a
+            >
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>Advanced Excel Course</h4>
+            <p>
+              Master MS Excel. Take the online ms excel course and learn t ...
+            </p>
+          </div>
+          <hr />
+          <p><span>₹5999</span> <span>₹2999</span></p>
+          <p class="emi">Emi Starting at ₹172/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"><button>KNOW MORE</button></a>
+            <a href="#">
+              <button class="add_course_cart">ADD TO CART</button></a
+            >
+          </div>
+        </div>
+        <div class="prod">
+          <img
+            src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png"
+            alt=""
+          />
+          <div class="font">
+            <h4>R Programming Course</h4>
+            <p>
+              Learn r programming online. Sign up for this online r progra ..
+            </p>
+          </div>
+          <hr />
+          <p><span>₹5999</span> <span>₹2999</span></p>
+          <p class="emi">Emi Starting at ₹172/month <span>?</span></p>
+          <div class="btn">
+            <a href="#"> <button>KNOW MORE</button></a>
+            <a href="#"><button class="add_course_cart">ADD TO CART</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="couponcourse">
+      <p>
+        Use Coupon Code FIRSTCOURSE to avail a discount of 20% on your course
+        enrolment. Offer expires
+      </p>
+      <span></span>
+    </div>
+    <!-- <div id="footer_container"></div> -->
+    <div id="footerr">
+      <div id="footer_containerfirst">
+        <div class="containerfirstdivdiv">
+          <div>
+            <a href="#" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/4922/4922978.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              target="_blank"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2111/2111499.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/4926/4926492.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/747/747562.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="containerfirstdiv">
+          <p>BY PLACE</p>
+          <hr />
+        
+          <a
+            href="#"
+          >
+            <p>Internships In Mumbai</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Internships In Delhi</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Internships In Bangalore</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Internships In Pune</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Internships In Hyderabad</p>
+          </a>
+        </div>
+        <div class="containerfirstdiv">
+          <p>BY PROFILE</p>
+          <hr />
+          <a
+            href="#"
+          >
+            <p>Marketing Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Business Development Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Content Writing Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Graphic Designing Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>HR Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Engineering Internships</p>
+          </a>
+        </div>
+        <div class="containerfirstdiv">
+          <p>BY TYPE</p>
+          <hr />
+          <a
+            href="#"
+          >
+            <p>Full Time Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Part Time Internships</p>
+          </a>
+          <a
+            href="#"
+          >
+            <p>Work From Home Internships</p>
+          </a>
+        </div>
+        </div>
+        <div id="footer_containersecond">
+        <a href="#">
+          <p>REFUND & CANCELLATION POLICY</p>
+        </a>
+        <a href="#">
+          <p>COURSES</p>
+        </a>
+        <a href="#">
+          <p>TERMS AND CONDITIONS</p>
+        </a>
+        <a href="#">
+          <p>PRIVACY POLICY</p>
+        </a>
+        <a href="#">
+          <p>CONTACT US</p>
+        </a>
+        <a href="#">
+          <p>ABOUT US</p>
+        </a>
+        <a href="#">
+          <p>SITEMAP</p>
+        </a>
+        </div>
+        <hr />
+        <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+      </div>      
+    </div>
+  </body>
+</html>
+<script src="./scripts/courses.js" type="module"></script>
+<script src="/scripts/navbar.js"></script>

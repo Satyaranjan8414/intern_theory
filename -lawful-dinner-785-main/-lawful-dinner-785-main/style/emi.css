@@ -1,0 +1,221 @@
+ 
+
+ 
+@media all and (min-width:900px){
+    #emi_box{
+        width: 35%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: fixed;
+        top:30%;
+        left:30%;
+        background-color: white;
+        padding:30px 30px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    #emi_box>h3{
+        font-weight: lighter;
+        
+        font-family: 'Work Sans', sans-serif;
+        color:rgb(26, 25, 25);
+        font-weight: bold;
+    }
+    #emi_box>h3+p{
+        color:rgb(12, 112, 226);
+        margin-bottom: 0px;
+        text-transform: capitalize;
+    }
+    #bank_details{
+        border:none;
+        width:70%;
+        border-bottom: 1px solid rgb(10, 148, 234);
+        background-color: rgb(249, 247, 247);
+        padding: 6px ;
+        border-radius: 2px;
+        
+    }
+    #bank_details>option{
+        font-size: 18px;
+        overflow: scroll;
+        
+    }
+    
+    #pay_details{
+        display: flex;
+        justify-content: space-between;
+        color:gray;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        margin-top: 35px;
+        margin-bottom: -10px;
+    }
+    #pay_details>p{
+        width: 10%;
+        font-size: 12px;
+    }
+    hr{
+        height: 0.2px;
+        background-color: rgb(202, 202, 202);
+        border:none;
+    }
+    #emi_close{
+        border:none;
+        color:rgb(0, 140, 255);
+        margin-top: 30px;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        background-color: white;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+    
+    }
+    
+    
+    
+    @media all and (min-width:600px) and (max-width:899px){
+        #emi_box{
+            width: 45%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            position: fixed;
+            top:30%;
+            left:25%;
+            background-color: white;
+            padding:30px 30px;
+            border-radius: 10px;
+            z-index: 2;
+        }
+        #emi_box>h3{
+            font-weight: lighter;
+            
+            font-family: 'Work Sans', sans-serif;
+            color:rgb(26, 25, 25);
+            font-weight: bold;
+        }
+        #emi_box>h3+p{
+            color:rgb(12, 112, 226);
+            margin-bottom: 0px;
+            text-transform: capitalize;
+        }
+        #bank_details{
+            border:none;
+            width:70%;
+            border-bottom: 1px solid rgb(10, 148, 234);
+            background-color: rgb(249, 247, 247);
+            padding: 6px ;
+            border-radius: 2px;
+            
+        }
+        #bank_details>option{
+            font-size: 18px;
+            overflow: scroll;
+            
+        }
+        
+        #pay_details{
+            display: flex;
+            justify-content: space-between;
+            color:gray;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 90%;
+            margin: auto;
+            margin-top: 35px;
+            margin-bottom: -10px;
+        }
+        #pay_details>p{
+            width: 10%;
+            font-size: 12px;
+        }
+        hr{
+            height: 0.2px;
+            
+            background-color: rgb(202, 202, 202);
+            border:none;
+        }
+        #emi_close{
+            border:none;
+            color:rgb(0, 140, 255);
+            margin-top: 30px;
+            text-transform: uppercase;
+            padding: 10px 10px;
+            background-color: white;
+            margin-left: 80%;
+            cursor: pointer;
+        }
+        
+    
+    }
+    
+    
+    
+    
+        @media all and (min-width:10px) and (max-width:599px){
+            #emi_box{
+                width: 55%;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                position: fixed;
+                top:30%;
+                left:15%;
+                background-color: white;
+                padding:30px 30px;
+                border-radius: 10px;
+                z-index: 2;
+            }
+            #emi_box>h3{
+                font-weight: lighter;
+                
+                font-family: 'Work Sans', sans-serif;
+                color:rgb(26, 25, 25);
+                font-weight: bold;
+            }
+            #emi_box>h3+p{
+                color:rgb(12, 112, 226);
+                margin-bottom: 0px;
+                text-transform: capitalize;
+            }
+            #bank_details{
+                border:none;
+                width:80%;
+                border-bottom: 1px solid rgb(10, 148, 234);
+                background-color: rgb(249, 247, 247);
+                padding: 6px ;
+                border-radius: 2px;
+                
+            }
+            #bank_details>option{
+                font-size: 18px;
+                overflow: scroll;
+                
+            }
+            
+            #pay_details{
+                display: flex;
+                justify-content: space-between;
+                
+                color:gray;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                
+                margin-top: 35px;
+                margin-bottom: -10px;
+            }
+            #pay_details>p{
+                width: 10%;
+                font-size: 12px;
+            }
+            hr{
+                height: 0.2px;
+                background-color: rgb(202, 202, 202);
+                border:none;
+            }
+            #emi_close{
+                border:none;
+                color:rgb(0, 140, 255);
+                margin-top: 30px;
+                text-transform: uppercase;
+                padding: 10px 10px;
+                background-color: white;
+                margin-left: 80%;
+                cursor: pointer;
+            }
+            
+            }

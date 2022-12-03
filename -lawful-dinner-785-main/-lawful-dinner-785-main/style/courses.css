@@ -1,0 +1,558 @@
+
+  @media all and (min-width:950px) {
+
+    .top-bottom{
+    width: 100%;
+        
+    
+}
+#top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top img:nth-child(2){
+    width: 80%;
+    height: 30vh;
+    
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    top:10%;
+    left:10%;
+}
+#top img:nth-child(1){
+    width: 100%;
+    height: 33vh;
+    opacity: 1;
+}
+#container{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#product{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;   
+    margin: auto;
+
+}
+.prod{
+    border-radius: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prod img{
+ width: 100%;
+ height: 15vh;
+ 
+}
+.prod p{
+    font-size: 16px;
+    font-size: 13.2px;
+    line-height: 22px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+#container h2{
+    font-weight: lighter;
+    color:gray;
+
+}
+ p{
+    color:gray;
+    font-size: 13.2px;
+    line-height: 24px;
+    font-weight: lighter;
+    margin-top: -10px;
+}
+.font{
+    height: 100px;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+.prod h4{
+    margin-bottom: 18px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:rgb(27, 27, 27);
+}
+.prod h4+p{
+    color:gray;
+}
+hr{
+    
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    margin-right:5%;
+    border-style:dotted;
+    border-color: gray;
+}
+hr+ p{
+    text-align: right;
+    /* margin-left: 50%; */
+    padding-right: 10%;
+}
+hr+p>span:first-child{
+    text-decoration: line-through;
+    color:gray;
+    
+}
+#container p>span:nth-child(2){
+    color:black;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+#container .prod hr+ p+p{
+    text-align: right;
+    padding: 0px 10px;
+    cursor: pointer;
+    color:rgb(231, 155, 14);
+    font-weight: bolder;
+    
+    
+}
+
+#container .prod hr+ p+p>span{
+    border-radius: 50%;
+    border:1.5px solid;
+    padding: 1px 3px;
+}
+
+.btn{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+    gap: 5px;
+}
+.btn>a{
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn a:nth-child(1)>button{
+    color: rgb(25, 51, 163);
+    background-color: white;
+    font-weight: bolder;
+}
+.btn a:nth-child(1)>button:hover{
+    background-color: rgb(203, 225, 238);
+}
+.btn a>button{
+    height: fit-content;
+    font-weight: bolder;
+    font-size: 12px;
+    
+    padding: 6px 6px;
+    border:none;
+    border-radius: 4px;
+    background-color: red;
+    cursor: pointer;
+    color:white;
+    
+    font-weight: bolder;
+    
+}
+.btn a>button:hover{
+    background-color:rgb(184, 13, 13);
+}
+#couponcourse{
+    width: 100vw;
+    padding:14px 0px;
+    color:white;
+    
+     margin-top: 30px;
+    position: relative;
+    top:90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgb(209, 24, 24);
+} 
+#couponcourse>p{
+    width: 80%;
+    align-items: center;
+    color:white;
+    line-height: 20px;
+    font-weight: bolder;
+    margin: auto;
+}
+}
+@media all and (min-width:600px) and (max-width:949px){
+    
+        .top-bottom{
+        width: 100vw;
+        
+    }
+    #top{
+        width: 100vw;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #top img:nth-child(2){
+        width: 80%;
+        height: 15%;
+        
+        display: flex;
+        z-index: 2;
+        position: absolute;
+        top:12%;
+        left:10%;
+    }
+    #top img:nth-child(1){
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    #container{
+        width: 80%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #product{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;   
+        margin: auto;
+    
+    }
+    .prod{
+        border-radius: 10px;
+        padding-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .prod img{
+     width: 100%;
+     height: 15vh;
+     
+    }
+    .prod p{
+        font-size: 16px;
+        font-size: 13.2px;
+        line-height: 22px;
+        font-weight: lighter;
+        margin-top: -10px;
+    }
+    #container h2{
+        font-weight: lighter;
+        color:gray;
+    
+    }
+     p{
+        color:gray;
+        font-size: 13.2px;
+        line-height: 24px;
+        font-weight: lighter;
+        margin-top: -10px;
+    }
+    .font{
+        height: 32%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: -16px;
+        
+    
+    }
+    .prod h4{
+        margin-bottom: 18px;
+        margin-top: 10px;
+        font-size: 14px;
+        color:rgb(27, 27, 27);
+    }
+    .prod h4+p{
+        color:gray;
+    }
+    hr{
+        
+        margin-bottom: 20px;
+        margin-left: 5%; 
+        margin-right:5%;
+        border-style:dotted;
+        border-color: gray;
+    }
+    hr+ p{
+        text-align: right;
+        /* margin-left: 50%; */
+        padding-right: 10%;
+    }
+    hr+p>span:first-child{
+        text-decoration: line-through;
+        color:gray;
+        
+    }
+    #container p>span:nth-child(2){
+        color:black;
+        font-size: 16px;
+        font-weight: 750;
+    }
+    
+    #container .prod hr+ p+p{
+        text-align: right;
+        padding: 0px 10px;
+        cursor: pointer;
+        color:rgb(231, 155, 14);
+        font-weight: bolder;
+    
+        
+    }
+    
+    #container .prod hr+ p+p>span{
+        border-radius: 50%;
+        border:1.5px solid;
+        padding: 1px 3px;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: right;
+        padding-right: 10px;
+        gap: 5px;
+    }
+    .btn>a{
+        height: fit-content;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+    a:nth-child(1)>button{
+        color: rgb(25, 51, 163);
+        background-color: white;
+        font-weight: bolder;
+    }
+    a:nth-child(1)>button:hover{
+        background-color: rgb(203, 225, 238);
+    }
+    a>button{
+        height: fit-content;
+        padding:6px 4px;
+        border:none;
+        border-radius: 4px;
+        background-color: red;
+        cursor: pointer;
+        color:white;
+        font-weight: bolder;
+        
+    }
+    a>button:hover{
+        background-color:rgb(184, 13, 13);
+    }
+    #couponcourse{
+        width: 100vw;
+        padding:14px 0px;
+        color:white;
+        
+         margin-top: 30px;
+        position: relative;
+        top:90%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        background-color: rgb(209, 24, 24);
+    } 
+    #couponcourse>p{
+        width: 80%;
+        align-items: center;
+        color:white;
+        line-height: 20px;
+        font-weight: bolder;
+        margin: auto;
+    }
+    }
+    
+    @media all and (min-width:10px) and (max-width:599px){
+        
+            .top-bottom{
+            width: 100vw;
+            
+        }
+        #top{
+            width: 100vw;
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+        #top img:nth-child(2){
+            width: 80%;
+            height: 20%;
+            display: flex;
+            z-index: 2;
+            position: absolute;
+            top:5%;
+            left:10%;
+        }
+        #top img:nth-child(1){
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #product{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+            gap:30px;   
+            margin: auto;
+        
+        }
+        .prod{
+            border-radius: 10px;
+            height: fit-content;
+            padding-bottom: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .prod img{
+         width: 100%;
+         height: 40%;
+         
+        }
+        .prod p{
+            font-size: 16px;
+            font-size: 13.2px;
+            line-height: 22px;
+            font-weight: lighter;
+            margin-top: -10px;
+        }
+        #container h2{
+            font-weight: lighter;
+            color:gray;
+        
+        }
+         p{
+            color:gray;
+            font-size: 13.2px;
+            line-height: 24px;
+            font-weight: lighter;
+            margin-top: -10px;
+        }
+        .font{
+            
+            margin-left: 2%;
+            margin-right: 3%;
+            text-align: justify;
+            margin-bottom: 3%;
+        }
+        .prod h4{
+            margin-bottom: 18px;
+            margin-top: 10px;
+            font-size: 14px;
+            color:rgb(27, 27, 27);
+        }
+        .prod h4+p{
+            color:gray;
+            line-height: 20px;
+            text-align: left;
+        }
+        hr{
+            
+            margin-bottom: 20px;
+            margin-left: 5%; 
+            margin-right:5%;
+            margin-top: 30px;
+            border-style:dotted;
+            border-color: gray;
+        }
+        hr+ p{
+            text-align: right;
+            /* margin-left: 50%; */
+            padding-right: 10%;
+        }
+        hr+p>span:first-child{
+            text-decoration: line-through;
+            color:gray;
+            
+        }
+        #container p>span:nth-child(2){
+            color:black;
+            font-size: 16px;
+            font-weight: 750;
+        }
+        
+        #container .prod hr+ p+p{
+            text-align: right;
+            padding: 0px 10px;
+            cursor: pointer;
+            color:rgb(231, 155, 14);
+            font-weight: bolder;
+        
+            
+        }
+        
+        #container .prod hr+ p+p>span{
+            border-radius: 50%;
+            border:1.5px solid;
+            padding: 1px 3px;
+        }
+        
+        .btn{
+            display: flex;
+            justify-content: right;
+            padding-right: 10px;
+            gap: 5px;
+        }
+        .btn>a{
+            height: fit-content;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+        a:nth-child(1)>button{
+            color: rgb(25, 51, 163);
+            background-color: white;
+            font-weight: bolder;
+        }
+        a:nth-child(1)>button:hover{
+            background-color: rgb(203, 225, 238);
+        }
+        a>button{
+            height: fit-content;
+            padding: 6px 4px;
+            border:none;
+            border-radius: 4px;
+            background-color: red;
+            cursor: pointer;
+            color:white;
+            font-weight: bolder;
+            font-size: 12   px;
+            
+        }  
+        a>button:hover{
+            background-color:rgb(184, 13, 13);
+        }
+        #couponcourse{
+            width: 100vw;
+            padding:14px 0px;
+            
+            margin-top: 30px;
+            position: relative;
+            top:90%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-align: center;
+            background-color: rgb(230, 16, 16);
+        } 
+        #couponcourse>p{
+            width: 80%;
+            align-items: center;
+            color:white;
+            line-height: 20px;
+            font-weight: bolder;
+            margin: auto;
+        }
+        }

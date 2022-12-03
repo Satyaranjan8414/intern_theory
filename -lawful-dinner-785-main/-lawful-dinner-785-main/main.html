@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script
+      src="https://kit.fontawesome.com/b63073adcc.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./style/styleContent.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    
+</head>
+
+<body>
+    <div id="nav_bar">
+        <div id="nav_log">
+          <i class="fa-solid fa-bars nav_ham" id="slider"></i>
+          <img
+            id="navimg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8RE3l71VRCm23ci33-wBI5lLx7hwhghecXza9lao&s"
+            alt=""
+          />
+        </div>
+        <div id="signin">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="signup.html">
+            <h4 id="s1">SignIn</h4>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo_content">
+          <div class="logo">
+            <i class="fa-solid fa-bars close" id="close"></i>
+            <img
+              id="logo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8RE3l71VRCm23ci33-wBI5lLx7hwhghecXza9lao&s"
+              alt=""
+            />
+            <div class="logo_name"></div>
+          </div>
+        </div>
+        <ul class="nav_list">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span class="links_name"><b>Home</b></span>
+            </a>
+          </li>
+  
+          <li id="intern">
+            <a href="#">
+              <i class="fa-solid fa-list"></i>
+              <span class="links_name"><b>Internships</b></span>
+            </a>
+          </li>
+  
+          <li id="jobss">
+            <a href="#">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="links_name"><b>Jobs</b></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-list-check"></i>
+              <span class="links_name"><b>Post Internship</b></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"  onclick="course()">
+              <i class="fa-solid fa-mobile"></i>
+              <span class="links_name"><b>Courses</b></span>
+              <i id="ar1" class="fa-solid fa-angle-down"></i>
+            </a>
+  
+           
+          </li>
+          <ul class="course">
+            <a href="#" id="opt1">
+              <li id="onn"><b>Online Courses</b></li>
+              <li><b>Classroom Traning</b></li>
+            </a>
+          </ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              <span class="links_name"><b>Contact Us</b></span>
+            </a>
+          </li>
+          <li class="register" onclick="register()">
+            <a href="#">
+              <i class="fa-solid fa-align-left"></i>
+              <span class="links_name"><b>Register</b></span>
+              <i id="ar2" class="fa-solid fa-angle-down"></i>
+            </a>
+         
+          </li>
+          <ul id="reg" class="how">
+            <li class="opt"><b>Company</b></li>
+            <li class="opt"><b>Student</b></li>
+           </ul>
+          <li onclick="login()">
+            <a href="login.html">
+              <i class="fa-solid fa-book"></i>
+              <span class="links_name"><b>Login</b></span>
+              <i id="ar3" class="fa-solid fa-angle-down"></i>
+            </a>
+           
+          </li>
+          <ul id="log" class="how">
+            <li class="opt"><b>Company</b></li>
+            <li class="opt"><b>Student</b></li>
+          </ul>
+        </ul>
+      </div>
+
+    <div class="content" id="con1">
+        <div class="conmpb1">
+            <div>
+                <div class="conmpb1ft1">Let's Get You <span>Ready</span></div>
+                <div>The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</div>
+                <div class="conmpb1Select">
+                    <div>
+                        <select id="city" onchange="storeCity()">
+                            <option>Cities..</option>
+                            <option>Delhi</option>
+                            <option>Bangalore</option>
+                            <option>Hyderabad</option>
+                            <option>Kolkata</option>
+                            <option>Chennai</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="type" onchange="storeType()">
+                            <option>Types..</option>
+                            <option>Part Time</option>
+                            <option>Full Time</option>
+                            <option>Work From Home</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <select id="pref" onchange="storePref()">
+                            <option>Preferences..</option>
+                            <option>Business Development</option>
+                            <option>Content Writing</option>
+                            <option>Software Development</option>
+                        </select>
+                    </div>
+                    <div class="conmpb1SelectOr">OR</div>
+                    <div class="conmpb1Search">
+                        <div><input id="mpSearchBox" type="text" placeholder="Search.." /></div>
+                        <div>
+                            <div id="mpSearchBut" class="pointer">SEARCH</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="conmpb2">
+
+            <div>
+                <div class="conmpb5txt">
+                    <div>PLETHORA OF OPPORTUNITIES <span>FOR YOU</span></div>
+                    <hr>
+                    We are on a mission to connect employers to young talent all over India. With our strong corporate
+                    network, it will no
+                    longer be a challenge to find the right internship for you
+                </div>
+            </div>
+            <div>
+                <div class="conmpb2img"><img src="./images/kk.jpg"></div>
+            </div>
+        </div>
+        <div class="conmpb3">
+            <div>LET'S GET SOME <span>WORK EXPERIENCE</span></div>
+            <div class="mpgrid1">
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/BD.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/Finance.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/HR.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/Eng.jpg" /></a>
+                <a href="internship.html"><img
+                        src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg" /></a>
+            </div>
+        </div>
+        <div class="conmpb4">
+            <div>HOW ABOUT <span>UPSKILLING ?</span></div>
+            <div class="mpgrid2">
+                <a href="#"><img src="https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg"></a>
+                <a href="#"><img src="https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg"></a>
+                <a href="#"><img src="https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg"></a>
+            </div>
+        </div>
+        <div class="conmpb5">
+            <div>
+                <div class="conmpb5img"><img src="https://assets.interntheory.com/creative/chart.png"></div>
+            </div>
+            <div>
+                <div class="conmpb5txt">
+                    <div>WE ARE CONSTANTLY <span>GROWING</span></div>
+                    <hr>
+                    We are on a mission to help every student in India. Upgrading your CV and getting you a meaningful
+                    job
+                    remains our sole
+                    motive and we are not stopping anytime soon.
+                </div>
+            </div>
+          </div>     
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="https://i.ibb.co/9Nhz7v5/i2.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="https://i.ibb.co/wBXPdFF/i1.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="https://i.ibb.co/vQq56cw/i4.png" style="width:100%">
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      <div id="footerr">
+        <div id="footer_containerfirst">
+          <div class="containerfirstdivdiv">
+            <div>
+              <a href="#" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/4922/4922978.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2111/2111499.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/4926/4926492.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747562.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="containerfirstdiv">
+            <p>BY PLACE</p>
+            <hr />
+          
+            <a
+              href="#"
+            >
+              <p>Internships In Mumbai</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Internships In Delhi</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Internships In Bangalore</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Internships In Pune</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Internships In Hyderabad</p>
+            </a>
+          </div>
+          <div class="containerfirstdiv">
+            <p>BY PROFILE</p>
+            <hr />
+            <a
+              href="#"
+            >
+              <p>Marketing Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Business Development Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Content Writing Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Graphic Designing Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>HR Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Engineering Internships</p>
+            </a>
+          </div>
+          <div class="containerfirstdiv">
+            <p>BY TYPE</p>
+            <hr />
+            <a
+              href="#"
+            >
+              <p>Full Time Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Part Time Internships</p>
+            </a>
+            <a
+              href="#"
+            >
+              <p>Work From Home Internships</p>
+            </a>
+          </div>
+          </div>
+          <div id="footer_containersecond">
+          <a href="#">
+            <p>REFUND & CANCELLATION POLICY</p>
+          </a>
+          <a href="#">
+            <p>COURSES</p>
+          </a>
+          <a href="#">
+            <p>TERMS AND CONDITIONS</p>
+          </a>
+          <a href="#">
+            <p>PRIVACY POLICY</p>
+          </a>
+          <a href="#">
+            <p>CONTACT US</p>
+          </a>
+          <a href="#">
+            <p>ABOUT US</p>
+          </a>
+          <a href="#">
+            <p>SITEMAP</p>
+          </a>
+          </div>
+          <hr />
+          <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+        </div>      
+      </div>  
+</body>
+</html>
+<script src="./scripts/sidebar.js"></script>
+
+ 
