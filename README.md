@@ -2,7 +2,7 @@
  Intern_theory.com is an online community and resource center created to help students, young professionals, and recent graduates find internships and start their careers. Through a variety of online tools, such as blogs, videos, and podcasts, Intern_theory.com provides resources for self-development and career exploration. The site also offers resources for employers, including job postings, resume review, and advice for hiring interns.
 
  
- intern_theory did this by using HTML, CSS, Javascript . I tried to clone it exactly like real Milaap website.
+ intern_theory did this by using HTML, CSS, Javascript . I tried to clone it exactly like real InternTheory.
 
 
 This was a solo project executed within 4 days of span.
