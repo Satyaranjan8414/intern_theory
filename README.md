@@ -27,12 +27,13 @@ My Responsibilty -:
 
 **Deploying:** Netlify-link : https://jazzy-yeot-8e721e.netlify.app/
 
-![Screenshot (302)](https://user-images.githubusercontent.com/107980582/207099175-1ecb3f08-5fe1-4836-9313-d6f7bde76f26.png)
-![Screenshot (303)](https://user-images.githubusercontent.com/107980582/207099197-4bbb3740-0e9b-4f29-9678-42fb641e2299.png)
-![Screenshot (304)](https://user-images.githubusercontent.com/107980582/207099215-d0536e26-91d4-47d8-8848-a00275b2c79e.png)
-![Screenshot (305)](https://user-images.githubusercontent.com/107980582/207099230-1554a595-9925-46d4-ae25-c37c902cfa66.png)
-![Screenshot (306)](https://user-images.githubusercontent.com/107980582/207099248-5a3c55e8-a16d-44ca-adbe-b1a7fca8ed37.png)
 
+![Screenshot (360)](https://user-images.githubusercontent.com/107980582/229873844-6539f796-5a4c-4cea-9522-1c3dfdea39a8.png)
+![Screenshot (361)](https://user-images.githubusercontent.com/107980582/229873865-867cedbd-86da-442a-b25e-b3208ce36c90.png)
+
+![Screenshot (362)](https://user-images.githubusercontent.com/107980582/229873877-dd8abb2c-9edd-4f09-8aea-6cb263eb037b.png)
+![Screenshot (363)](https://user-images.githubusercontent.com/107980582/229873930-015e97cc-bc45-4bf9-a120-3b7e6b703811.png)
+![Screenshot (365)](https://user-images.githubusercontent.com/107980582/229873975-2886c494-208a-4d77-873d-a3311aaba277.png)
 
 
 ## THANK YOU ❤️
